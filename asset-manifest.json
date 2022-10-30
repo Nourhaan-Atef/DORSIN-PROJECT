@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DORSIN-PROJECT/static/css/main.58e664fa.css",
+    "main.js": "/DORSIN-PROJECT/static/js/main.eaa12828.js",
+    "static/js/787.7e90cb28.chunk.js": "/DORSIN-PROJECT/static/js/787.7e90cb28.chunk.js",
+    "index.html": "/DORSIN-PROJECT/index.html",
+    "main.58e664fa.css.map": "/DORSIN-PROJECT/static/css/main.58e664fa.css.map",
+    "main.eaa12828.js.map": "/DORSIN-PROJECT/static/js/main.eaa12828.js.map",
+    "787.7e90cb28.chunk.js.map": "/DORSIN-PROJECT/static/js/787.7e90cb28.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58e664fa.css",
+    "static/js/main.eaa12828.js"
+  ]
+}
