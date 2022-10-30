@@ -1,0 +1,431 @@
+:root {
+  --main-color: #fb3e3e;
+  --main-font: "Poppins", sans-serif;
+  --paragraph-color: #95a0ab;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* NavBar  Style*/
+.navbar .link,
+.nav-link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.navbar-nav {
+  margin: 0 auto;
+  margin-right: 0;
+}
+.navbar-nav .nav-link {
+  padding: 15px 8px;
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.5s;
+}
+.navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 120px;
+  transition: 0.5s;
+}
+.btn-primary:hover {
+  background-color: var(--main-color);
+  transform: translateY(-5px);
+  border: 1px solid #b90334;
+}
+
+@media (max-width: 990px) {
+  .navbar-nav .nav-link {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  .navbar-toggler {
+    outline: none;
+    border: none;
+  }
+}
+
+/* Home Page */
+
+img {
+  width: 100%;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  color: #000;
+}
+
+/* Services */
+#Services,
+#team,
+#blog,
+#price,
+#contact {
+  flex-direction: column;
+  padding: 50px;
+  padding-bottom: 0;
+}
+#Services header,
+#team header,
+#blog header,
+#price header,
+#contact header {
+  flex-direction: column;
+}
+#Services header h1,
+#team header h1,
+#blog header h1,
+#price header h1,
+#contact header h1 {
+  font-family: var(--main-font);
+}
+#Services .description p,
+#team .description p,
+#blog .description p,
+#price .description p,
+#contact .description p {
+  max-width: 70%;
+  color: var(--paragraph-color);
+}
+
+.divider {
+  width: 70px;
+  height: 3px;
+  background-color: var(--main-color);
+  text-align: center;
+}
+
+.card {
+  border: none;
+  flex-wrap: nowrap;
+  transition: 0.5s;
+}
+
+#Services .card i {
+  color: var(--main-color);
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 25px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%);
+  transition: 0.5s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+#Services .card:hover i {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.card h3 {
+  font-size: 18px;
+}
+
+.card p {
+  color: var(--paragraph-color);
+}
+
+@media (max-width: 700px) {
+  #Services,
+  #team,
+  #blog,
+  #price,
+  #contact {
+    padding: 50px 15px;
+  }
+  #Services .description p,
+  #team .description p,
+  #blog .description p,
+  #price .description p,
+  #contact .description p {
+    max-width: 100%;
+  }
+}
+
+/* Features */
+
+#features {
+  text-align: start;
+  padding: 80px;
+}
+
+#features h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+#features p {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: var(--paragraph-color);
+}
+
+#features ul li {
+  margin-left: 20px;
+  padding: 5px;
+  color: var(--paragraph-color);
+}
+#features ul li::marker {
+  color: var(--main-color);
+  font-size: 25px;
+}
+#features button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+#features button:hover {
+  transform: translateY(-10px);
+}
+@media (max-width: 980px) {
+  #features {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  #features {
+    padding: 30px;
+  }
+}
+/* Team */
+#team .card:hover,
+#blog .card:hover {
+  border-bottom: 2px solid var(--main-color);
+}
+#team .card p {
+  font-size: 13px;
+}
+
+/* Blog */
+
+#blog .blog {
+  text-align: start;
+}
+
+#blog a,
+#blog i {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 15px;
+}
+#blog a:hover,
+#blog a:hover i {
+  color: #000;
+}
+
+/* Pricing */
+#price {
+  font-family: var(--main-font);
+}
+
+#price .card {
+  border: 1px solid var(--paragraph-color);
+  transition: 0.5s;
+}
+#price .card:hover {
+  border-color: var(--main-color);
+}
+#price .card .title {
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+#price .card .desc {
+  font-size: 12px;
+  font-weight: bold;
+}
+#price .card-divider {
+  width: 90%;
+  height: 1px;
+  background-color: var(--paragraph-color);
+  text-align: center;
+  margin: auto;
+  opacity: 0.2;
+}
+#price .card-body p {
+  color: #000;
+  margin: 16px;
+}
+#price .card-body p span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+#price button {
+  width: 100px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: var(--main-font);
+  margin: auto;
+  transition: 0.5s;
+}
+#price button:hover {
+  transform: translateY(-5px);
+}
+
+/* Contacts */
+#contact .divider {
+  text-align: center;
+}
+#contact .left {
+  margin-top: 20px;
+}
+#contact .row .left div {
+  margin-bottom: 25px;
+}
+#contact .row .left h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+#contact .row .left p {
+  color: var(--paragraph-color);
+}
+
+#contact form input,
+textarea {
+  padding: 10px;
+  margin: 15px;
+  margin-left: 0;
+  outline: none;
+  border: 1px solid var(--paragraph-color);
+}
+#contact button {
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Footer */
+.footer .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.footer .contact .social i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--paragraph-color);
+  border: 2px solid var(--paragraph-color);
+  margin: 5px;
+  transition: 0.5s;
+}
+.footer .contact .social i:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+.footer .contact .support div {
+  margin: 20px 10px;
+}
+.footer .contact .support div i {
+  margin-right: 10px;
+  color: var(--paragraph-color);
+ 
+}
+
+.footer .contact .support div p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .footer .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .contact .social,
+  .footer .contact .support {
+    margin: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .support {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer {
+  flex-wrap: wrap;
+  text-align: start;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+footer section h2 {
+  margin: 30px 0;
+}
+footer section ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer ul li,
+footer p {
+  color: var(--paragraph-color);
+  padding: 3px;
+  transition: 0.3s;
+
+}
+footer ul li:hover,
+footer p:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.copy-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
